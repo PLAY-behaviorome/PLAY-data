@@ -10,4 +10,4 @@ Description: This package facilitates access to and the manipulation
 License: MIT
 Encoding: UTF-8
 LazyData: true
-RoxygenNote: 7.2.1
+RoxygenNote: 7.2.3

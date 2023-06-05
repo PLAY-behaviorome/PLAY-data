@@ -1,0 +1,39 @@
+---
+title: "Accessing PLAY Project Data"
+author: "Rick O. Gilmore"
+date: "`r Sys.Date()`"
+output:
+  rmarkdown::html_vignette:
+      fig_caption: yes
+vignette: >        
+  %\VignetteIndexEntry{Accessing PLAY Project Data}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+library(tidyverse)
+```
+
+## Vignette Info
+
+The Play & Learning Across a Year (PLAY) [Project](https://play-project.org) is a research project that collects and shares video recordings and other data from a one-hour natural
+home interaction between 12-, 18-, and 24-month-old infants and their mothers.
+
+This package facilitates use of and interaction with the data collected on PLAY, especially the survey data.
+These data are stored in the [Databrary](https://databrary.org) data library, hosted at New York University.
+Some data are available to the public, but most of the data are restricted to researchers who have secured authorization from their home institutions.
+
+## Registering for Databrary access
+
+If you are already an authorized investigator with access to Databrary, you may skip to the next section.
+
+If you are **not** an authorized investigator, you must [register](https://databrary.org/register) and secure [authorization](https://www.databrary.org/resources/agreement.html) from an institution.
+The authorization process requires formal agreement by an institution.
+But you'll create an account ID (email) and secure password when you register.
+Then, when you log in with your new credentials, you'll select an existing institution (if yours is on the list), a new institution (if yours isn't), or an existing authorized investigator (if you are a student, postdoc, or collaborator) to request authorization from.
+

@@ -3,9 +3,6 @@
 #' @param databrary_user_id A valid Databrary user ID (email).
 databrary_check_renviron <- function() {
   databrary_user_id <- readline(prompt = "Enter Databrary login (email): ")
-
-  require(usethis)
-
   if (databrary_user_id != Sys.getenv("DATABRARY_LOGIN")) {
     message("Databrary credentials '", databrary_user_id, "' not stored in ~/.Renviron")
     message("Opening ~/.Renviron so user can edit.")

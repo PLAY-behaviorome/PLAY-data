@@ -2,8 +2,9 @@
 #'
 #' @param databrary_user_id A valid Databrary user ID (email).
 databrary_test_login <- function(env_var = "DATABRARY_LOGIN") {
-  require(databraryapi)
-
+  stopifnot(is.character(env_var))
+  stopifnot(length(env_var) == 1)
+  
   db_login <- Sys.getenv(env_var)
   if (!databraryapi::login_db(db_login)) {
     message("Login failed. '", paste0(env_var, "=", db_login), "' found in ~/.Renviron is invalid.")
